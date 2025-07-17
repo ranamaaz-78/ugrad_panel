@@ -1,0 +1,290 @@
+.leader-board {
+    width: 100% !important;
+    border: 1px solid #F3F4F6;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    .board {
+        height: 330px;
+        background-color: #E9F1F3;
+        position: relative;
+
+        .wrap {
+            height: 100%;
+            width: 100%;
+            background-image: url('../../assets/learner_portal/components/leader_board/bg.svg');
+            padding: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            h5 {
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 20px;
+                line-height: 120%;
+                letter-spacing: -2%;
+                color: #0A2628;
+            }
+
+            p {
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: #6C737F;
+            }
+        }
+
+        .positions {
+            height: 200px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: space-evenly;
+
+            .position {
+                width: 73px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+
+                &.second {
+
+                    .img {
+                        border-color: #B3AFAB;
+                        position: relative;
+                        left: 5px;
+                    }
+
+                    .point {
+                        background-color: #B3AFAB;
+                        height: 50px;
+                    }
+
+                    .rank {
+                        background-color: #B3AFAB;
+                    }
+                }
+
+                &.first {
+
+                    .img {
+                        border-color: #FDAF21;
+                        width: 80px;
+                        height: 80px;
+                        position: relative;
+                        left: -5px;
+                    }
+
+                    .point {
+                        background-color: #FDAF21;
+                        height: 90px;
+                    }
+
+                    .rank {
+                        background-color: #FDAF21;
+                    }
+
+                    .name {
+                        font-weight: 500;
+                    }
+                }
+
+                &.third {
+
+                    .img {
+                        border-color: #FFA768;
+                        position: relative;
+                        left: 5px;
+                    }
+
+                    .point {
+                        background-color: #FFA768;
+                        height: 37px;
+                    }
+
+                    .rank {
+                        background-color: #FFA768;
+                    }
+                }
+
+
+                .img {
+                    width: 62px;
+                    height: 62px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    border: 3px solid #000;
+                    position: relative;
+
+                    .profile {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            transform: scale(1.15);
+                        }
+                    }
+
+                    .medal {
+                        position: absolute;
+                        top: 3px;
+                        left: -6px;
+                    }
+
+                    .rank {
+                        font-weight: 600;
+                        font-style: SemiBold;
+                        font-size: 12px;
+                        line-height: 13px;
+                        letter-spacing: 0%;
+                        color: #fff;
+                        border: 2px solid #fff;
+                        padding: 3px 6px;
+                        border-radius: 20px;
+                        position: absolute;
+                        bottom: -11px;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+                }
+
+                .name {
+                    font-family: Poppins;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 12px;
+                    margin-top: 5px;
+                    letter-spacing: 0px;
+                    color: #101828;
+                    text-align: center;
+                }
+
+                .point {
+
+                    width: 73px;
+                    border-radius: 12px 12px 0 0;
+                    height: 80px;
+                    background-color: black;
+                    padding: 10px;
+                    text-align: center;
+
+                    span {
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 12px;
+                        line-height: 18px;
+                        letter-spacing: 0px;
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .board-detail {
+        padding: 20px;
+        border-bottom: 1px solid #F3F4F6;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            li {
+                height: 52px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 20px;
+
+                &.active {
+                    background-color: #E9F1F3;
+                }
+
+                .first {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .rank {
+                        font-weight: 600;
+                        font-style: SemiBold;
+                        font-size: 12px;
+                        letter-spacing: 0px;
+                        color: #6C737F;
+                    }
+
+                    .img {
+                        height: 36px;
+                        width: 36px;
+                        border-radius: 50%;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .name {
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 16px;
+                        letter-spacing: -0.18px;
+                        color: #0A2628;
+                        margin: 0;
+                    }
+                }
+
+                .point {
+                    font-weight: 550;
+                    font-style: SemiBold;
+                    font-size: 14px;
+                    letter-spacing: -0.02px;
+                    color: #003C3F;
+                }
+            }
+
+        }
+
+
+    }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+
+        a {
+            font-family: Poppins;
+            font-weight: 550;
+            font-style: SemiBold;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 20px;
+            letter-spacing: -0.02px;
+            color: #113025;
+        }
+    }
+}

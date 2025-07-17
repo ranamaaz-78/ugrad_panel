@@ -1,0 +1,273 @@
+.form-wrap {
+    width: 500px;
+    margin: 0 auto;
+
+    h2 {
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 36px;
+        line-height: 120%;
+        letter-spacing: -3%;
+        color: #113025;
+        margin-bottom: 10px;
+    }
+
+    h6 {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.26px;
+        color: #6C737F;
+    }
+
+
+    .social-signup-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+
+        .social-signup {
+            width: calc(50% - 10px);
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            gap: 10px;
+            font-weight: 550;
+            font-style: SemiBold;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.02px;
+            box-shadow: 0px 1px 2px 0px #1018280D;
+        }
+    }
+
+    .divider {
+        text-align: center;
+        position: relative;
+        margin: 25px 0;
+
+        span {
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.05px;
+            vertical-align: middle;
+            color: #113025;
+            padding: 0 15px;
+            text-align: center;
+            background-color: #fff;
+            position: relative;
+            z-index: 99;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #E3E8EF;
+            z-index: 9;
+        }
+    }
+
+    .forgot-password-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .forgot-password{
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.05px;
+            color: #113025;
+        }
+    }
+
+    .submit-btn {
+        width: 100%;
+        height: 48px;
+        background-color: #113025;
+        color: #fff;
+        border-radius: 8px;
+        border: none;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.18px;
+    }
+
+    .auth-bottom-link {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.18px;
+        text-align: center;
+        color: #6C737F;
+        margin-top: 20px;
+
+        a{
+            color: #113025;
+        }
+    }
+}
+
+
+.ugrad-input-form-group {
+    position: relative;
+    margin-bottom: 10px;
+
+    .urag-label {
+        color: #384250;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.05px;
+        margin-bottom: 5px;
+    }
+
+    .ugrad-input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #E5E7EB;
+        border-radius: 8px;
+        padding: 5px 40px 5px 10px;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.05px;
+        color: #384250;
+        outline: none;
+
+        &::placeholder {
+            color: #9DA4AE;
+        }
+
+        &:focus {
+            border: 1px solid #113025;
+        }
+    }
+
+    .eye {
+        position: absolute;
+        bottom: 14px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
+
+.otp-wrap{
+    display: flex;
+    gap: 10px;
+    .otp-input{
+        width: 80px;
+        height: 92px;
+        border: 2px solid #E5E7EB;
+        border-radius: 8px;
+        outline: none;
+        text-align: center;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 48px;
+        line-height: 22px;
+        letter-spacing: -0.05px;
+        color: #113025;
+          caret-color: transparent; // Hides the blinking text bar
+
+
+        &:focus{
+            border: 2px solid #113025;
+        }
+        &.filled{
+            border: 2px solid #113025;
+        }
+    }
+}
+
+.ugrad-checkbox-wrapper {
+    margin-top: 20px;
+}
+
+.ugrad-checkbox-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    user-select: none;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    text-align: center;
+    color: #6C737F;
+
+    a {
+        color: #113025;
+    }
+
+}
+
+// Hide the default checkbox input
+.ugrad-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+// Style the custom checkbox box
+.custom-checkbox {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+// Change background and border on checked
+.ugrad-checkbox:checked~.custom-checkbox {
+    background-color: #113025; // Primary color
+    border-color: #113025;
+}
+
+// Hide the checkmark by default
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+// Show checkmark on checked
+.ugrad-checkbox:checked~.custom-checkbox::after {
+    display: block;
+}
+
+// Style the checkmark (✓)
+.custom-checkbox::after {
+    width: 12px;
+    height: 12px;
+    background-image: url("../../../assets/learner_portal/auth/check.svg");
+    background-repeat: no-repeat;
+    top: 4px;
+    right: 3px;
+}

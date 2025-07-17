@@ -1,0 +1,96 @@
+.streaks {
+    border: 1px solid #F3F4F6;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    .header {
+        border-bottom: 1px solid #F3F4F6;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: -2%;
+            color: #0A2628;
+        }
+    }
+
+    .wrap {
+        padding: 20px;
+        border-bottom: 1px solid #F3F4F6;
+
+        .streak-heading {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: -2%;
+            color: #FF7324;
+        }
+    }
+
+    .streak-data {
+        padding: 20px;
+
+        .streak-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 11px;
+
+            .streak {
+                height: 80px;
+                border: 1px solid #F3F4F6;
+                border-radius: 8px;
+                width: calc(10% - 10px);
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 7px;
+
+                p {
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0px;
+                    color: #6C737F;
+                }
+
+                .dark {
+                    display: block;
+                }
+
+                .light {
+                    display: none;
+                }
+
+                &.active {
+                    border: 1px solid #FEF6EE;
+                    background-color: #FEF6EE;
+
+                    p {
+                        color: #0A2628;
+                    }
+
+                    .dark {
+                        display: none;
+                    }
+
+                    .light {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
