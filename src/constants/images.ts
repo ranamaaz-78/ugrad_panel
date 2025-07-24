@@ -1,5 +1,5 @@
 // src/constants/images.js
-import Logo from "../assets/svg/logo.svg";
+import Logo from "../assets/svg/Logo.svg";
 import AboutUsBannerImage from "../assets/aboutUsBanner.png";
 import Lines from "../assets/Lines.png";
 import AboutUsLogo from "../assets/svg/AboutUsLogo.svg";
@@ -25,7 +25,7 @@ import InstructorImage6 from "../assets/instructorImage6.jpg";
 import InstructorImage7 from "../assets/instructorImage7.jpg";
 import InstructorImage8 from "../assets/instructorImage8.jpg";
 import ConatctUsImage from "../assets/contactUsImage.png";
-import FooterLogo from "../assets/svg/footerLogo.svg";
+import FooterLogo from "../assets/svg/FooterLogo.svg";
 import Underline from "../assets/svg/Underline.svg";
 import OpenQuote from "../assets/icons/OpenQuote.svg";
 import CloseQuote from "../assets/icons/CloseQuote.svg";
