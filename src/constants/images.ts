@@ -2,7 +2,7 @@
 import Logo from "../assets/svg/logo.svg";
 import AboutUsBannerImage from "../assets/aboutUsBanner.png";
 import Lines from "../assets/Lines.png";
-// import AboutUsLogo from "../assets/svg/AboutUsLogo.svg";
+import AboutUsLogo from "../assets/svg/AboutUsLogo.svg";
 import AboutUsVideo from "../assets/videos/aboutusVideo.mp4";
 import PensilBook from "../assets/icons/PensilBook.svg";
 import PensilBookWhite from "../assets/icons/PensilBookWhite.svg";
@@ -70,7 +70,7 @@ export const Images = {
   Logo: Logo,
   AboutUsBannerImage: AboutUsBannerImage,
   Lines: Lines,
-  // AboutUsLogo: AboutUsLogo,
+  AboutUsLogo: AboutUsLogo,
   AboutUsVideo: AboutUsVideo,
   PensilBook: PensilBook,
   Users: Users,
