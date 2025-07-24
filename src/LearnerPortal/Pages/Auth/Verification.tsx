@@ -1,10 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./Authentication.scss";
 import slash from "../../../assets/learner_portal/auth/slash.svg";
 
 export default function Verification() {
     const [otp, setOtp] = useState(["", "", "", "", "", ""]);
-    const inputRefs = useRef([]);
+    const inputRefs = useRef<Array<HTMLInputElement | null>>([]);
     const [timer, setTimer] = useState(30);
 
     // Countdown timer
@@ -23,7 +23,7 @@ export default function Verification() {
     }, []);
 
     // Handle input changes
-    const handleChange = (e, index) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
         const value = e.target.value;
         if (!/^[0-9]?$/.test(value)) return;
 
@@ -32,14 +32,14 @@ export default function Verification() {
         setOtp(newOtp);
 
         if (value && index < 5) {
-            inputRefs.current[index + 1]?.focus();
+            inputRefs.current[index + 1]?.focus && inputRefs.current[index + 1]?.focus();
         }
     };
 
     // Handle backspace
-    const handleKeyDown = (e, index) => {
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>, index: number) => {
         if (e.key === "Backspace" && !otp[index] && index > 0) {
-            inputRefs.current[index - 1]?.focus();
+            inputRefs.current[index - 1]?.focus && inputRefs.current[index - 1]?.focus();
         }
     };
 
@@ -61,7 +61,7 @@ export default function Verification() {
                                     value={digit}
                                     onChange={(e) => handleChange(e, i)}
                                     onKeyDown={(e) => handleKeyDown(e, i)}
-                                    ref={(el) => (inputRefs.current[i] = el)}
+    ref={(el) => { inputRefs.current[i] = el; }}
                                 />
                             ))}
                             <img src={slash} alt="slash" />
@@ -74,7 +74,7 @@ export default function Verification() {
                                     value={digit}
                                     onChange={(e) => handleChange(e, i + 3)}
                                     onKeyDown={(e) => handleKeyDown(e, i + 3)}
-                                    ref={(el) => (inputRefs.current[i + 3] = el)}
+    ref={(el) => { inputRefs.current[i + 3] = el; }}
                                 />
                             ))}
                         </div>

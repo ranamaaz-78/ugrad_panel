@@ -11,7 +11,7 @@ export default function ResetPassword() {
 
                         <div style={{ marginBottom: "30px", marginTop: "25px" }}>
                             <div className="ugrad-input-form-group" >
-                                <label className="urag-label">Email</label>
+                                <label className="ugrad-label">Email</label>
                                 <input type="text" className="ugrad-input" placeholder="Enter Email Address" />
                             </div>
                         </div>

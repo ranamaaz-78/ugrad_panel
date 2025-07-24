@@ -24,25 +24,25 @@ export default function SignUp() {
           <div className="row">
             <div className="col-md-6">
               <div className="ugrad-input-form-group">
-                <label className="urag-label">First Name</label>
+                <label className="ugrad-label">First Name</label>
                 <input type="text" className="ugrad-input" placeholder="First Name" />
               </div>
             </div>
             <div className="col-md-6">
               <div className="ugrad-input-form-group">
-                <label className="urag-label">Last Name</label>
+                <label className="ugrad-label">Last Name</label>
                 <input type="text" className="ugrad-input" placeholder="Last Name" />
               </div>
             </div>
           </div>
           <div className="ugrad-input-form-group">
-            <label className="urag-label">Email</label>
+            <label className="ugrad-label">Email</label>
             <input type="text" className="ugrad-input" placeholder="Email" />
           </div>
 
           {/* Password */}
           <div className="ugrad-input-form-group password">
-            <label className="urag-label">Password</label>
+            <label className="ugrad-label">Password</label>
             <input
               type={showPassword ? "text" : "password"}
               className="ugrad-input"
@@ -58,7 +58,7 @@ export default function SignUp() {
 
           {/* Confirm Password */}
           <div className="ugrad-input-form-group password">
-            <label className="urag-label">Confirm Password</label>
+            <label className="ugrad-label">Confirm Password</label>
             <input
               type={showConfirmPassword ? "text" : "password"}
               className="ugrad-input"

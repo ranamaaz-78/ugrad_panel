@@ -22,13 +22,13 @@ export default function SignIn() {
           </div>
           <div className="divider"><span>Or Login with</span></div>
           <div className="ugrad-input-form-group">
-            <label className="urag-label">Email</label>
+            <label className="ugrad-label">Email</label>
             <input type="text" className="ugrad-input" placeholder="Email" />
           </div>
 
           {/* Password */}
           <div className="ugrad-input-form-group password">
-            <label className="urag-label">Password</label>
+            <label className="ugrad-label">Password</label>
             <input
               type={showPassword ? "text" : "password"}
               className="ugrad-input"

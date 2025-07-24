@@ -16,7 +16,7 @@ export default function SetNewPassword() {
                     <div style={{ marginBottom: "30px", marginTop: "25px" }}>
                         {/* Password */}
                         <div className="ugrad-input-form-group password">
-                            <label className="urag-label">Password</label>
+                            <label className="ugrad-label">Password</label>
                             <input
                                 type={showPassword ? "text" : "password"}
                                 className="ugrad-input"
@@ -32,7 +32,7 @@ export default function SetNewPassword() {
 
                         {/* Confirm Password */}
                         <div className="ugrad-input-form-group password">
-                            <label className="urag-label">Confirm Password</label>
+                            <label className="ugrad-label">Confirm Password</label>
                             <input
                                 type={showConfirmPassword ? "text" : "password"}
                                 className="ugrad-input"

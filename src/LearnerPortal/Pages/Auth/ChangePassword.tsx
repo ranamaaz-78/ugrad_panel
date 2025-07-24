@@ -15,7 +15,7 @@ export default function ChangePassword() {
                     <div style={{ marginBottom: "30px", marginTop: "25px" }}>
                         {/* Password */}
                         <div className="ugrad-input-form-group password">
-                            <label className="urag-label">Current Password</label>
+                            <label className="ugrad-label">Current Password</label>
                             <input
                                 type={showPassword ? "text" : "password"}
                                 className="ugrad-input"

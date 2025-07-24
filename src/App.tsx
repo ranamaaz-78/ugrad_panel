@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PublicLayout from "./utilities/publicRoutes";
-import LearnerAuthLayout from "./utilities/LearnerAuthRoutes";
+import LearnerAuthLayout from "./utilities/learnerAuthRoutes";
 import LearnerAdminRoutes from "./utilities/LearnerAdminRoutes";
 
 import {
@@ -18,6 +18,7 @@ import SetNewPassword from "./LearnerPortal/Pages/Auth/SetNewPassword";
 import ChangePassword from "./LearnerPortal/Pages/Auth/ChangePassword";
 import Verification from "./LearnerPortal/Pages/Auth/Verification";
 import Dashboard from "./LearnerPortal/Pages/Dashboard/Dashboard";
+import Profile from "./LearnerPortal/Pages/Profile/Profile";
 
 function App() {
   const router = createBrowserRouter([
@@ -54,6 +55,7 @@ function App() {
       element: <LearnerAdminRoutes />,
       children: [
         { path: "", element: <Dashboard /> },
+        { path: "profile", element: <Profile /> },
         // Add more protected routes here
       ],
     },

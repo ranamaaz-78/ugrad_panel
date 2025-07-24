@@ -1,0 +1,38 @@
+.profile-nav {
+    border-bottom: 1px solid #F2F4F7;
+    gap: 10px;
+
+    .nav-link {
+        font-family: Manrope;
+        font-weight: 550;
+        font-style: SemiBold;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.02px;
+        color: #6C737F;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: unset !important;
+        padding: 5px 5px 13px 5px;
+
+        &.blovk {
+            display: block;
+        }
+
+        &.none {
+            display: none;
+        }
+
+        &.active {
+            color: #003C3F;
+            font-family: poppins;
+            border: none;
+            border-bottom: 3px solid #003C3F !important;
+        }
+
+        &:hover {
+            color: #003C3F;
+        }
+    }
+}

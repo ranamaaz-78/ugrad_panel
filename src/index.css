@@ -29,13 +29,88 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: #888 #f1f1f1;
+  /* Firefox */
 
 }
 
-/* Base HTML styles */
-/* html,
-body,
-#root {
-  height: 100%;
-  width: 100%;
-} */
+
+/* WebKit-based browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Hide scrollbar buttons globally */
+::-webkit-scrollbar-button {
+  display: none !important;
+  height: 0;
+  width: 0;
+}
+
+
+.page-title {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -3%;
+  color: #113025;
+  margin-bottom: 15px;
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px;
+}
+
+.empty span {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+  text-align: center;
+  color: #6C737F;
+}
+
+.empty a , .empty button {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.05px;
+  color: #0A2628;
+
+  height: 36px;
+  min-width: 150px;
+  border-radius: 8px;
+  border: 1px solid #F3F4F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
