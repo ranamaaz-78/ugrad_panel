@@ -2,7 +2,6 @@
 import Logo from "../assets/svg/Logo.svg";
 import AboutUsBannerImage from "../assets/aboutUsBanner.png";
 import Lines from "../assets/Lines.png";
-import AboutUsLogo from "../assets/svg/AboutUsLogo.svg";
 import AboutUsVideo from "../assets/videos/aboutusVideo.mp4";
 import PensilBook from "../assets/icons/PensilBook.svg";
 import PensilBookWhite from "../assets/icons/PensilBookWhite.svg";
@@ -65,6 +64,7 @@ import HomeProgramImage1 from "../assets/HomeProgram1.png";
 import HomeProgramImage2 from "../assets/HomeProgram2.png";
 import HomeProgramImage3 from "../assets/HomeProgram3.png";
 import homeLines from "../assets/svg/homeLines.svg";
+import AboutUsLogo from "../assets/svg/AboutUsLogo.svg";
 
 export const Images = {
   Logo: Logo,
