@@ -45,7 +45,7 @@
     padding: 30px;
     margin-bottom: 20px;
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
 
     &.orange {
@@ -62,7 +62,7 @@
 
     .first {
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         flex-direction: column;
         gap: 10px;
         margin: 0;
@@ -174,13 +174,13 @@
 
         .info {
             display: flex;
-            align-items: start;
+            align-items: flex-start;
             justify-content: space-between;
             gap: 30px;
 
             .first {
                 display: flex;
-                align-items: start;
+                align-items: flex-start;
                 gap: 15px;
 
                 .profile {
