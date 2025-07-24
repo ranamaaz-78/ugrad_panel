@@ -70,7 +70,7 @@ export const Images = {
   Logo: Logo,
   AboutUsBannerImage: AboutUsBannerImage,
   Lines: Lines,
-  AboutUsLogo: AboutUsLogo,
+  // AboutUsLogo: AboutUsLogo,
   AboutUsVideo: AboutUsVideo,
   PensilBook: PensilBook,
   Users: Users,
