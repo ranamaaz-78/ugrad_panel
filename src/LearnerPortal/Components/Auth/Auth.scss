@@ -1,31 +1,65 @@
 .authBody {
     min-height: calc(100vh - 40px);
-    width: 35%;
+    width: 500px;
 
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        height: auto;
+        min-height: unset;
+    }
 
-    .wrapper{
+    .logo {
+        display: none;
+
+        @media screen and (max-width: 992px) {
+            display: block;
+        }
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .wrapper {
         display: flex;
         align-items: center;
 
-        .banner{
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+
+        .banner {
             width: 100%;
 
-            img{
+            img {
                 width: 100%;
             }
         }
-        
+
     }
 }
 
-.auth-wrapper{
+.auth-wrapper {
     min-height: calc(100vh - 40px);
     display: flex;
     align-items: center;
     padding: 20px;
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
 }
-.auth-content{
-    width: 65%;
+
+.auth-content {
+    width: calc(100% - 500px);
     padding-left: 20px;
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        padding-left: 0;
+    }
 
 }

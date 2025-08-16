@@ -1,6 +1,27 @@
 .profile-nav {
     border-bottom: 1px solid #F2F4F7;
     gap: 10px;
+    flex-wrap: nowrap !important;
+    overflow-y: auto;
+    scrollbar-width: none; // Firefox
+    -ms-overflow-style: none; // IE & old Edge
+
+    &::-webkit-scrollbar {
+        display: none; // Chrome, Safari, Opera
+    }
+
+    &.program {
+        .nav-link {
+            padding-bottom: 20px;
+
+            &.active {
+                padding-bottom: 17px;
+
+            }
+        }
+
+
+    }
 
     .nav-link {
         font-family: Manrope;
@@ -15,6 +36,8 @@
         gap: 5px;
         border: unset !important;
         padding: 5px 5px 13px 5px;
+        text-wrap: nowrap !important;
+
 
         &.blovk {
             display: block;
@@ -29,6 +52,7 @@
             font-family: poppins;
             border: none;
             border-bottom: 3px solid #003C3F !important;
+            padding-bottom: 10px;
         }
 
         &:hover {

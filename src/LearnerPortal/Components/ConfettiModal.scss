@@ -1,0 +1,62 @@
+.check {
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #27AE60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.confetti-modal-container{
+    .modal-dialog {
+
+        max-width: 690px;
+        margin: 0 auto;
+    }
+}
+.confetti-modal{
+    padding: 50px 0;
+}
+
+.confetti-modal-title {
+    font-family: Poppins;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: -3%;
+    text-align: center;
+    color: #113025;
+}
+
+.confetti-modal-message {
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: -0.26px;
+    text-align: center;
+    color: #6C737F;
+
+    span {
+        font-family: Poppins;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 120%;
+        letter-spacing: -3%;
+        text-align: center;
+        color: #003C3F;
+    }
+}

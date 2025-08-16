@@ -1,0 +1,175 @@
+.module-accordion {
+    background: #F5FAFE;
+    padding: 8px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+
+    .module-header {
+        cursor: pointer;
+        padding: 0 5px;
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+
+            h4 {
+                font-family: Poppins;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 20px;
+                letter-spacing: -0.05px;
+                color: #111927;
+                margin: 0;
+            }
+        }
+
+        .header-info {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.875rem;
+            color: #6C737F;
+            font-family: Poppins;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 10px;
+            leading-trim: NONE;
+            line-height: 12px;
+            letter-spacing: 0%;
+
+            span {
+                display: flex;
+                align-items: center;
+                gap: 3px;
+            }
+
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+
+            &.open {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .module-body {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .lesson-item {
+            background: transparent;
+            border-radius: 6px;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            justify-content: space-between;
+            color: #1f2937;
+
+            span {
+                font-family: Poppins;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 12px;
+                leading-trim: NONE;
+                line-height: 18px;
+                letter-spacing: 0px;
+                color: #111927;
+            }
+
+            &.completed {
+                background: #fff;
+                font-weight: 600;
+            }
+
+            .lesson-time {
+                display: flex;
+                align-items: center;
+                gap: 0.25rem;
+                font-family: Poppins;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 10px;
+                leading-trim: NONE;
+                line-height: 12px;
+                letter-spacing: 0%;
+                color: #6C737F;
+            }
+        }
+    }
+}
+
+
+
+.ugrad-checkbox-label-project {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    user-select: none;
+    font-family: Poppins;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 15px;
+    letter-spacing: 0px;
+    color: #111927;
+
+}
+
+// Hide the default checkbox input
+.ugrad-checkbox-project {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+// Style the custom checkbox box
+.custom-checkbox-project {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+// Change background and border on checked
+.ugrad-checkbox-project:checked~.custom-checkbox-project {
+    background-color: #113025; // Primary color
+    border-color: #113025;
+}
+
+// Hide the checkmark by default
+.custom-checkbox-project::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+// Show checkmark on checked
+.ugrad-checkbox-project:checked~.custom-checkbox-project::after {
+    display: block;
+}
+
+.custom-checkbox-project::after {
+    width: 8px;
+    height: 8px;
+    background-image: url("../../assets/learner_portal/auth/check.svg");
+    background-repeat: no-repeat;
+    top: 3px;
+    right: 2px;
+    background-size: contain;
+}

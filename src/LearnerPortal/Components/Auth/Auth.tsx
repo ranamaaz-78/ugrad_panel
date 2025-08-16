@@ -1,8 +1,12 @@
 import './Auth.scss'
 import bannerImg from '../../../assets/learner_portal/auth/auth-frame.svg';
+import form_logo from '../../../assets/learner_portal/auth/form_logo.svg';
 function Auth() {
   return (
     <div className="authBody">
+      <div className="logo">
+        <img src={form_logo} alt="" />
+      </div>
         <div className="wrapper">
           <div className="banner">
             <img src={bannerImg} alt="" />

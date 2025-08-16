@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PublicLayout from "./utilities/publicRoutes";
 import LearnerAuthLayout from "./utilities/learnerAuthRoutes";
 import LearnerAdminRoutes from "./utilities/LearnerAdminRoutes";
+import ProgramAdminRoute from "./utilities/ProgramAdminRoute";
 
 import {
   AboutScreen,
@@ -19,6 +20,13 @@ import ChangePassword from "./LearnerPortal/Pages/Auth/ChangePassword";
 import Verification from "./LearnerPortal/Pages/Auth/Verification";
 import Dashboard from "./LearnerPortal/Pages/Dashboard/Dashboard";
 import Profile from "./LearnerPortal/Pages/Profile/Profile";
+import MyProgram from "./LearnerPortal/Pages/Programs/MyProgram";
+import ProgramDetail from "./LearnerPortal/Pages/Programs/ProgramDetail";
+import PurchaseHistory from "./LearnerPortal/Pages/PurchaseHistory/PurchaseHistory";
+import SkillDrills from "./LearnerPortal/Pages/SkillDrills/SkillDrills";
+import Arena from "./LearnerPortal/Pages/Arena/Arena";
+import Mentorships from "./LearnerPortal/Pages/Mentorships/Mentorships";
+import Certifications from "./LearnerPortal/Pages/Certifications/Certifications";
 
 function App() {
   const router = createBrowserRouter([
@@ -56,9 +64,29 @@ function App() {
       children: [
         { path: "", element: <Dashboard /> },
         { path: "profile", element: <Profile /> },
+        { path: "my-programs", element: <MyProgram /> },
+        { path: "my-programs/full", element: <ProgramDetail /> },
+        { path: "certifications", element: <Certifications /> },
+        { path: "purchase-history", element: <PurchaseHistory /> },
+        { path: "skill-drills", element: <SkillDrills /> },
+        { path: "arena", element: <Arena /> },
+        { path: "mentorships", element: <Mentorships /> },
         // Add more protected routes here
       ],
     },
+
+    {
+      path: "/admin/my-programs/full",
+      element: <ProgramAdminRoute />, // wrap this layout around Outlet if needed
+      children: [
+        {
+          path: "", // this matches exactly "/admin/my-programs/full"
+          element: <ProgramDetail />,
+        },
+        // add more child routes here if needed
+      ],
+    }
+
   ]);
 
   return <RouterProvider router={router} />;

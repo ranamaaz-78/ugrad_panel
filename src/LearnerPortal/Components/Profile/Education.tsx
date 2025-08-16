@@ -69,12 +69,18 @@ export default function Education() {
         <div>
             <div>
                 <div className="profile-card">
+
                     {showEmptySections ? (
-                        <div className="empty">
-                            <img src={empty_lg} alt="" />
-                            <span>Display your educational milestones to boost your credibility and career prospects</span>
-                            <button onClick={handleEmptyClick}>Add Education</button>
-                        </div>
+                        <>
+                            <div className="header">
+                                <h3>Education</h3>
+                            </div>
+                            <div className="empty">
+                                <img src={empty_lg} alt="" />
+                                <span>Display your educational milestones to boost your credibility and career prospects</span>
+                                <button onClick={handleEmptyClick}>Add Education</button>
+                            </div>
+                            </>
                     ) : (
                         <>
                             <div className="header">
