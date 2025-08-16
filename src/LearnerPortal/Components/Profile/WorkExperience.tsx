@@ -71,16 +71,11 @@ export default function WorkExperience() {
             <div>
                 <div className="profile-card">
                     {showEmptySections ? (
-                        <>
-                            <div className="header">
-                                <h3>Skills</h3>
-                            </div>
-                            <div className="empty">
-                                <img src={empty_lg} alt="" />
-                                <span>Display your educational milestones to boost your credibility and career prospects</span>
-                                <button onClick={handleEmptyClick}>Add Education</button>
-                            </div>
-                        </>
+                        <div className="empty">
+                            <img src={empty_lg} alt="" />
+                            <span>Display your educational milestones to boost your credibility and career prospects</span>
+                            <button onClick={handleEmptyClick}>Add Education</button>
+                        </div>
                     ) : (
                         <>
                             <div className="header">

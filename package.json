@@ -11,13 +11,10 @@
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
-    "bootstrap": "^5.3.7",
-    "canvas-confetti": "^1.9.3",
     "dropzone": "^6.0.0-beta.2",
     "firebase": "^11.9.0",
     "framer-motion": "^12.18.1",
     "react": "^19.1.0",
-    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
     "react-dropzone": "^14.3.8",
     "react-fast-marquee": "^1.6.5",

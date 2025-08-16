@@ -33,16 +33,9 @@ export default function PersonalDetails() {
                             <div className="profile-wrap">
                                 <img src={profile_lg} alt="" />
                             </div>
-                            <div className="first-sub">
-                                <div className="child">
-                                    <h3>Noraiz Raja</h3>
-                                    <p>noraiz@example.com</p>
-                                </div>
-                            </div>
                         </div>
-
                         <div className="mid">
-                            <div className="child personal-info">
+                            <div className="child">
                                 <h3>Noraiz Raja</h3>
                                 <p>noraiz@example.com</p>
                             </div>

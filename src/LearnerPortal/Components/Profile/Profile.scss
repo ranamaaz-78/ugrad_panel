@@ -4,10 +4,6 @@
     padding: 20px;
     margin-top: 20px;
 
-    @media screen and (max-width: 992px) {
-        padding: 15px;
-    }
-
     &.wrap {
         background-color: #FCFCFD;
         border: unset !important;
@@ -16,7 +12,7 @@
     .header {
         margin-bottom: 20px;
         display: flex;
-    align-items: flex-start;
+        align-items: flex-start;
         justify-content: space-between;
         height: 40px;
 
@@ -49,7 +45,6 @@
             font-size: 14px;
             line-height: 150%;
             letter-spacing: 0%;
-            text-wrap: nowrap;
 
 
             svg {
@@ -86,47 +81,9 @@
             gap: 25px;
             margin-bottom: 20px;
 
-            @media screen and (max-width: 768px) {
-                flex-wrap: wrap;
-                height: auto;
-                border-radius: 24px;
-                justify-content: space-between;
-                gap: 10px;
-
-            }
-
             .first,
             .last {
                 width: 102px;
-
-                .child {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 6px;
-                    width: 33.33%;
-
-
-                    h3 {
-                        font-family: Poppins;
-                        font-weight: 600;
-                        font-style: SemiBold;
-                        font-size: 16px;
-                        line-height: 22px;
-                        letter-spacing: -0.18px;
-                        color: #113025;
-                        text-wrap: nowrap;
-                    }
-
-                    p {
-                        font-family: Poppins;
-                        font-weight: 400;
-                        font-style: Regular;
-                        font-size: 14px;
-                        line-height: 20px;
-                        letter-spacing: -0.05px;
-                        color: #113025;
-                    }
-                }
 
                 .profile-wrap {
                     height: 102px;
@@ -142,63 +99,16 @@
                 }
             }
 
-            .first-sub {
-                display: none;
-            }
-
-            @media screen and (max-width: 768px) {
-                .first {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    gap: 25px;
-                }
-
-                .first-sub {
-                    display: block;
-                }
-
-            }
-
-
-
             .mid {
                 width: calc(100% - 204px);
                 display: flex;
                 align-items: center;
-
-                @media screen and (max-width: 1100px) {
-                    justify-content: space-between;
-
-                }
-
-                @media screen and (max-width: 768px) {
-                    justify-content:flex-start;
-                    gap: 30px;
-                }
-
-                @media screen and (max-width: 576px) {
-                    flex-direction: column ;
-                    align-items: flex-start;
-                    gap: 0;
-                }
 
                 .child {
                     display: flex;
                     flex-direction: column;
                     gap: 6px;
                     width: 33.33%;
-
-                    @media screen and (max-width: 1100px) {
-                        width: auto !important;
-                    }
-
-                    @media screen and (max-width: 768px) {
-
-                        &.personal-info {
-                            display: none;
-                        }
-                    }
 
                     h3 {
                         font-family: Poppins;
@@ -208,8 +118,6 @@
                         line-height: 22px;
                         letter-spacing: -0.18px;
                         color: #113025;
-                        text-wrap: nowrap;
-
                     }
 
                     p {
@@ -361,7 +269,7 @@
 
     .left {
         display: flex;
-    align-items: flex-start;
+        align-items: flex-start;
         gap: 10px;
 
         .profile {

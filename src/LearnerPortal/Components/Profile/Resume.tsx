@@ -64,16 +64,11 @@ export default function Resume() {
         <div>
             <div className="profile-card">
                 {showEmptySections ? (
-                    <>
-                        <div className="header">
-                            <h3>Resume</h3>
-                        </div>
-                        <div className="empty">
-                            <img src={resume_empty} alt="" />
-                            <span>No resume uploaded yet. Upload your resume to showcase your profile to employers</span>
-                            <button onClick={handleEmptyClick}>Upload Resume</button>
-                        </div>
-                    </>
+                    <div className="empty">
+                        <img src={resume_empty} alt="" />
+                        <span>No resume uploaded yet. Upload your resume to showcase your profile to employers</span>
+                        <button onClick={handleEmptyClick}>Upload Resume</button>
+                    </div>
                 ) : (
                     <div>
                         <div className="header">

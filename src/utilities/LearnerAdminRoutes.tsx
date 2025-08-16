@@ -1,24 +1,17 @@
 import { Outlet } from "react-router-dom";
 import Layout1 from "../LearnerPortal/Layouts/Layout1";
 import Header from "../LearnerPortal/Layouts/Header";
-import { useState } from "react";
-
 
 export default function LearnerAdminRoutes() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setSidebarOpen((prev) => !prev);
-  };
-
   return (
     <div>
       <div className="learner-body">
-        {/* Sidebar */}
-        <Layout1 sidebarOpen={sidebarOpen} onMenuClick={toggleSidebar} />
+        {/* sidebar components start */}
+        <Layout1 />
+        {/* sidebar components end */}
 
-        {/* Header */}
-        <Header onMenuClick={toggleSidebar}  />
+        {/* header components start */}
+        <Header />
         {/* header components end */}
         <div className="content">
           <Outlet />

@@ -1,8 +1,7 @@
 // src/constants/images.js
-import Logo from "../assets/svg/logo.svg";
+import Logo from "../assets/SVG/Logo.svg";
 import AboutUsBannerImage from "../assets/aboutUsBanner.png";
 import Lines from "../assets/Lines.png";
-import AboutUsLogo from "../assets/svg/AboutUsLogo.svg";
 import AboutUsVideo from "../assets/videos/aboutusVideo.mp4";
 import PensilBook from "../assets/icons/PensilBook.svg";
 import PensilBookWhite from "../assets/icons/PensilBookWhite.svg";
@@ -25,10 +24,10 @@ import InstructorImage6 from "../assets/instructorImage6.jpg";
 import InstructorImage7 from "../assets/instructorImage7.jpg";
 import InstructorImage8 from "../assets/instructorImage8.jpg";
 import ConatctUsImage from "../assets/contactUsImage.png";
-import FooterLogo from "../assets/svg/footerLogo.svg";
-import Underline from "../assets/svg/Underline.svg";
-import OpenQuote from "../assets/icons/OpenQuote.svg";
-import CloseQuote from "../assets/icons/CloseQuote.svg";
+import FooterLogo from "../assets/SVG/FooterLogo.svg";
+import Underline from "../assets/SVG/Underline.svg";
+import OpenQuote from "../assets/icons/Openquote.svg";
+import CloseQuote from "../assets/icons/closeQuote.svg";
 import ceoImage from "../assets/ceoImage.png";
 import upskillingImage from "../assets/upskill.svg";
 import companyImage1 from "../assets/company name/costts.png";
@@ -59,12 +58,13 @@ import MentorDp from "../assets/MentorDP.png";
 import ProgramVideo from "../assets/videos/ProgramVideo.mp4";
 import BulletPointIcon from "../assets/icons/BulletPoint.svg";
 import Passionate from "../assets/passionate.svg";
-import ProgramHomePatternLeft from "../assets/svg/programHomePatternLeft.svg";
-import ProgramHomePatternRight from "../assets/svg/programHomePatternRight.svg";
+import ProgramHomePatternLeft from "../assets/SVG/programHomePatternLeft.svg";
+import ProgramHomePatternRight from "../assets/SVG/programHomePatternRight.svg";
 import HomeProgramImage1 from "../assets/HomeProgram1.png";
 import HomeProgramImage2 from "../assets/HomeProgram2.png";
 import HomeProgramImage3 from "../assets/HomeProgram3.png";
-import homeLines from "../assets/svg/homeLines.svg";
+import homeLines from "../assets/SVG/homeLines.svg";
+import AboutUsLogo from "../assets/SVG/AboutUsLogo.svg";
 
 export const Images = {
   Logo: Logo,
