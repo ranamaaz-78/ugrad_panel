@@ -17,6 +17,62 @@
             line-height: 120%;
             letter-spacing: -2%;
             color: #0A2628;
+            margin-bottom: 0;
+        }
+
+        .filters-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .filter-btn {
+                width: 36px;
+                height: 36px;
+                background-color: transparent;
+                border: 1px solid #E5E7EB;
+                cursor: pointer;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+
+  .filter-select {
+    width: 100%;
+    height: 36px;
+    border-radius: 6px;
+    background-color: #F9FAFB;
+    padding: 0 30px 0 10px; // extra space for arrow
+    font-size: 14px;
+    color: #0A2628;
+    outline: none;
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-image: url('../../assets/learner_portal/components/streaks/down_chevron.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
+}
+
         }
     }
 
@@ -44,12 +100,14 @@
             display: flex;
             flex-wrap: wrap;
             gap: 11px;
+            justify-content: space-evenly;
 
             .streak {
                 height: 80px;
                 border: 1px solid #F3F4F6;
                 border-radius: 8px;
                 width: calc(10% - 10px);
+                min-width: 66px;
                 padding: 5px;
                 display: flex;
                 flex-direction: column;

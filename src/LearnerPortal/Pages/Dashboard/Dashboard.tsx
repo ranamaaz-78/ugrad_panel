@@ -36,11 +36,10 @@ export default function Dashboard() {
       </div>
 
       <div className="row">
-        <div className="col-md-8">
+        <div className="col-xl-8 col-lg-7 col-md-12">
           <Streaks />
-
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-xl-4 col-lg-12 col-md-12">
               <div className="stat-box orange">
                 <div className="first">
                   <span>Enrolled Programs</span>
@@ -49,7 +48,7 @@ export default function Dashboard() {
                 <img src={stat_1} alt="" />
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
               <div className="stat-box blue">
                 <div className="first">
                   <span>In-Progress</span>
@@ -58,7 +57,7 @@ export default function Dashboard() {
                 <img src={stat_2} alt="" />
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
               <div className="stat-box green">
                 <div className="first">
                   <span>Completed</span>
@@ -69,13 +68,13 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-xl-4 col-lg-5 col-md-12">
           <LeaderBoard />
         </div>
       </div>
 
       <div className="row">
-        <div className="col-md-7">
+        <div className="col-lg-7 col-md-12">
           <div className="ugrad-card">
             <div className="header">
               <h1 className="title">Continue Your Learning Journey</h1>
@@ -126,7 +125,7 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="col-md-5">
+        <div className="col-lg-5 col-md-12">
           <div className="ugrad-card">
             <div className="header">
               <h1 className="title">Weekly Live Q&A Section</h1>
